@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f3ede3" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="external/fonts.googleapis.com/css2-73b569e721.css"
+      rel="stylesheet"
+    />
+    <title>Prathibha ❤ Krishnajith — Wedding Invitation</title>
+    <meta name="description" content="Wedding celebration of Prathibha & Krishnajith on 09th May 2027 at Sulaity Tower & Convention Center, Cheruthuruthy, Kerala." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://YOUR-SITE.netlify.app/" />
+    <meta property="og:title" content="Prathibha ❤ Krishnajith — Wedding Invitation" />
+    <meta property="og:description" content="With sacred fire as witness and ancestral blessings — join us for the wedding of Prathibha & Krishnajith on 09th May 2027 at Sulaity Tower & Convention Center, Cheruthuruthy, Kerala." />
+    <meta property="og:image" content="editable/assets/hero-composite.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1536" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Prathibha ❤ Krishnajith — Wedding Invitation" />
+    <meta name="twitter:description" content="Join us for the wedding of Prathibha & Krishnajith on 09th May 2027 at Sulaity Tower & Convention Center, Cheruthuruthy, Kerala." />
+    <meta name="twitter:image" content="editable/assets/hero-composite.jpg" />
+    <script src="./editable/wedding-data.js"></script>
+    <script type="module" crossorigin src="assets/index-mGGyI97A.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-pQKWR5sE.css">
+    <style>
+      .floating-music-toggle {
+        position: fixed;
+        top: 18px;
+        right: 18px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(26, 24, 20, 0.82);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        color: #f6f0e6;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 9999px;
+        padding: 8px 14px;
+        font-family: inherit;
+        font-size: 10px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        -webkit-tap-highlight-color: transparent;
+      }
+      .floating-music-toggle:hover {
+        background: rgba(26, 24, 20, 0.95);
+        transform: translateY(-2px);
+        box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+      }
+      .music-bars {
+        display: flex;
+        align-items: flex-end;
+        gap: 2.5px;
+        height: 12px;
+      }
+      .music-bar {
+        width: 2.5px;
+        background: #f6f0e6;
+        border-radius: 2px;
+        animation: bar-dance 1.1s ease-in-out infinite alternate;
+      }
+      .music-bar:nth-child(1) { height: 5px; animation-delay: 0.1s; }
+      .music-bar:nth-child(2) { height: 12px; animation-delay: 0.35s; }
+      .music-bar:nth-child(3) { height: 7px; animation-delay: 0.2s; }
+      .music-bar:nth-child(4) { height: 10px; animation-delay: 0.45s; }
+      .floating-music-toggle.paused .music-bar {
+        animation-play-state: paused;
+        height: 3px !important;
+        opacity: 0.5;
+      }
+      @keyframes bar-dance {
+        0% { height: 3px; }
+        100% { height: 13px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Background Music Audio & Floating Toggle -->
+    <audio id="bgMusic" src="./editable/assets/bg-music.mp3" loop preload="auto"></audio>
+    <button id="musicToggleBtn" class="floating-music-toggle paused" aria-label="Toggle background music">
+      <span class="music-bars">
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+      </span>
+      <span id="musicBtnLabel">Music</span>
+    </button>
+
+    <script>
+      (function() {
+        const audio = document.getElementById('bgMusic');
+        const btn = document.getElementById('musicToggleBtn');
+        const label = document.getElementById('musicBtnLabel');
+        let isPlaying = false;
+
+        function playAudio() {
+          audio.play().then(() => {
+            isPlaying = true;
+            btn.classList.remove('paused');
+            label.textContent = 'Music';
+          }).catch(err => {
+            console.log('Autoplay deferred:', err);
+          });
+        }
+
+        function pauseAudio() {
+          audio.pause();
+          isPlaying = false;
+          btn.classList.add('paused');
+          label.textContent = 'Muted';
+        }
+
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (isPlaying) {
+            pauseAudio();
+          } else {
+            playAudio();
+          }
+        });
+
+        // Auto-play as soon as user opens invitation gate or interacts with page
+        function startOnFirstInteraction() {
+          if (!isPlaying) {
+            playAudio();
+          }
+          document.removeEventListener('click', startOnFirstInteraction);
+          document.removeEventListener('touchstart', startOnFirstInteraction);
+        }
+        document.addEventListener('click', startOnFirstInteraction, { passive: true });
+        document.addEventListener('touchstart', startOnFirstInteraction, { passive: true });
+      })();
+    </script>
+  </body>
+</html>
