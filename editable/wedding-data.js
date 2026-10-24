@@ -13,6 +13,7 @@ window.WEDDING_DATA = {
     groomParents: "S/o Smt. Bijitha Unnikrishnan & Sri. Unnikrishnan Namboothiri",
     hashtag: "#KrishnajithWedsPrathibha",
     monogram: "P · K",
+    monogramImage: "./editable/assets/monogram.png",
     familyNote: "With love & blessings from Namboodiri & Namboothiri families",
   },
 
@@ -94,6 +95,7 @@ window.WEDDING_DATA = {
   },
 
   images: {
+    monogram: "./editable/assets/monogram.png",
     couple: "./editable/assets/layer-couple.png",
     background: "./editable/assets/layer-01-background.png",
     shadows: "./editable/assets/layer-02-shadows.png",
