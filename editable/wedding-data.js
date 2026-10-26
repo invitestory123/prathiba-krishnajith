@@ -11,10 +11,10 @@ window.WEDDING_DATA = {
     groomFull: "Krishnajith Namboothiri",
     brideParents: "D/o Smt. Sathi Namboodiri & Sri. Prasannan Namboodiri",
     groomParents: "S/o Smt. Bijitha Unnikrishnan & Sri. Unnikrishnan Namboothiri",
-    hashtag: "#KrishnajithWedsPrathibha",
+    hashtag: "",
     monogram: "P · K",
     monogramImage: "./editable/assets/monogram.png",
-    familyNote: "With love & blessings from Namboodiri & Namboothiri families",
+    familyNote: "With love and blessings",
   },
 
   wedding: {
@@ -31,11 +31,13 @@ window.WEDDING_DATA = {
 
   verse: {
     arabic: "॥ श्री गणेशाय नमः ॥",
-    text: "With ancestral blessings, sacred Vedic chants, and the holy fire as witness, we invite you to bless our sacred union of seven steps and eternal togetherness.",
+    text: "We, Prathibha, daughter of Smt. Sathi Namboodiri and Shri. Prasannan Namboodiri & Krishnajith, son of Smt. Bijitha Unnikrishnan and Shri. Unnikrishnan Namboothiri, are delighted to invite you and your family to our wedding festivities.",
   },
 
-  introSubtitle: "Open gently — an auspicious celebration awaits",
-  countdownTitle: "Until the auspicious Muhurtham",
+  introTitle: "Wedding Invitation Of ",
+  introSubtitle: "",
+  heroWelcome: "Welcome you to their WEDDING",
+  countdownTitle: "Until the WEDDING",
 
   events: [
     {
@@ -46,39 +48,37 @@ window.WEDDING_DATA = {
       dayNum: "07",
       monthLabel: "May 2027",
       time: "From 5:00 PM Onwards",
-      venue: "Sulaity Tower & Convention Center",
+      venue: "",
       note: "An evening of music, melody, dance, and celebratory joy.",
     },
     {
-      name: "Ayaniyoonu",
+      name: "Pre wedding ritual",
       icon: "heart",
       date: "Saturday, 8th May 2027",
       dayLabel: "Saturday",
       dayNum: "08",
       monthLabel: "May 2027",
       time: "From 7:00 AM Onwards",
-      venue: "Sulaity Tower & Convention Center",
+      venue: "",
       note: "Traditional auspicious pre-wedding feast and sacred family rituals.",
     },
     {
-      name: "Wedding (Muhurtham)",
+      name: "Wedding",
       icon: "heart",
       date: "Sunday, 9th May 2027",
       dayLabel: "Sunday",
       dayNum: "09",
       monthLabel: "May 2027",
       time: "Muhurtham: 07:30 AM – 08:30 AM",
-      venue: "Sulaity Tower & Convention Center, Cheruthuruthy, Kerala",
-      note: "Sacred Brahmin wedding ceremony with Kanyadaanam, Panigrahanam, and Sapthapadi around the holy fire.",
+      venue: "",
+      note: "",
     },
   ],
 
   program: [
     { name: "Sangeeth Celebrations", time: "07 May, 5:00 PM" },
-    { name: "Traditional Ayaniyoonu", time: "08 May, 7:00 AM" },
-    { name: "Kashi Yatra & Varmala", time: "09 May, 7:00 AM" },
-    { name: "Muhurtham & Sapthapadi", time: "09 May, 7:30 AM – 8:30 AM" },
-    { name: "Traditional Wedding Sadhya", time: "09 May, 11:30 AM Onwards" },
+    { name: "Pre Wedding Ritual", time: "08 May, 7:00 AM" },
+    { name: "Muhurtham", time: "09 May, 7:30 AM – 8:30 AM" },
   ],
 
   music: {
@@ -106,6 +106,11 @@ window.WEDDING_DATA = {
   },
 
   footer: {
-    familyNote: "With love & blessings from Namboodiri & Namboothiri families",
+    blessingTitle: "With love and blessings",
+    blessings: [
+      "Pournami - Prashanth",
+      "Keerthana - Shashank"
+    ],
+    familyNote: "With love and blessings\nPournami - Prashanth\nKeerthana - Shashank",
   },
 };
