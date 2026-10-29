@@ -82,6 +82,149 @@
         0% { height: 3px; }
         100% { height: 13px; }
       }
+
+      /* ============================================================
+         EVENT CARDS BORDER, SPACING & ALIGNMENT FIXES
+         ============================================================ */
+
+      /* Reset default Tailwind blue ring color across elements */
+      *, ::before, ::after {
+        --tw-ring-color: rgba(26, 24, 20, 0.12);
+      }
+
+      /* Card Container - Spacing & Alignment */
+      .max-w-md.flex.flex-col,
+      .gap-8 {
+        gap: 2rem !important;
+      }
+
+      /* Event Cards: Outer Frame, Padding & Background */
+      .rounded-\[2rem\] {
+        border-radius: 2rem !important;
+      }
+
+      div.rounded-\[2rem\],
+      .bg-\[\#fffaf4\]\/90 {
+        background-color: rgba(255, 250, 244, 0.96) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        box-shadow: 0 20px 60px rgba(60, 45, 30, 0.1), 0 4px 14px rgba(60, 45, 30, 0.05) !important;
+        border: 1px solid rgba(26, 24, 20, 0.12) !important;
+        --tw-ring-color: transparent !important;
+      }
+
+      .pt-10 {
+        padding-top: 2.75rem !important;
+      }
+
+      .pb-9 {
+        padding-bottom: 2.5rem !important;
+      }
+
+      /* Inner Decorative Double Border */
+      .rounded-\[1\.55rem\] {
+        border-radius: 1.55rem !important;
+      }
+
+      div.rounded-\[2rem\] > div.rounded-\[1\.55rem\] {
+        top: 0.75rem !important;
+        bottom: 0.75rem !important;
+        left: 0.75rem !important;
+        right: 0.75rem !important;
+        border-radius: 1.55rem !important;
+        border: 1px solid rgba(26, 24, 20, 0.09) !important;
+        --tw-ring-color: transparent !important;
+      }
+
+      /* Date Numerals (07, 08, 09) */
+      .text-7xl,
+      div.rounded-\[2rem\] .text-7xl {
+        font-family: 'Cormorant Garamond', Georgia, serif !important;
+        font-size: 4.75rem !important;
+        line-height: 1 !important;
+        font-weight: 700 !important;
+        color: #1a1814 !important;
+        margin-top: 0.25rem !important;
+        margin-bottom: 0.25rem !important;
+      }
+
+      /* Event Titles (SANGEETH, PRE WEDDING RITUAL, WEDDING) */
+      div.rounded-\[2rem\] h3 {
+        font-family: 'Cormorant Garamond', Georgia, serif !important;
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.24em !important;
+        color: #1a1814 !important;
+        margin-top: 0.25rem !important;
+        line-height: 1.35 !important;
+      }
+
+      /* Day Labels (FRIDAY, SATURDAY, SUNDAY) */
+      div.rounded-\[2rem\] p.text-xs {
+        font-size: 0.75rem !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.28em !important;
+        color: #5c5146 !important;
+        margin-top: 0.5rem !important;
+      }
+
+      /* Month Labels (May 2027) */
+      div.rounded-\[2rem\] p.text-lg {
+        font-family: 'Cormorant Garamond', Georgia, serif !important;
+        font-size: 1.15rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.16em !important;
+        color: #4a4036 !important;
+        margin-top: 0.5rem !important;
+      }
+
+      /* Time Labels (From 5:00 PM Onwards, Muhurtham...) */
+      div.rounded-\[2rem\] p.text-2xl {
+        font-family: 'Cormorant Garamond', Georgia, serif !important;
+        font-size: 1.35rem !important;
+        font-weight: 700 !important;
+        color: #1a1814 !important;
+        margin-top: 1.25rem !important;
+      }
+
+      /* Ceremony Description Notes */
+      div.rounded-\[2rem\] p.italic {
+        font-family: 'Cormorant Garamond', Georgia, serif !important;
+        font-style: italic !important;
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        color: #6e6256 !important;
+        max-width: 22rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 0.75rem !important;
+      }
+
+      /* Utility classes recovery */
+      .font-bold { font-weight: 700 !important; }
+      .text-\[\#1a1814\] { color: #1a1814 !important; }
+      .text-\[\#8a7a68\] { color: #8a7a68 !important; }
+      .text-\[\#5c5146\] { color: #5c5146 !important; }
+      .text-\[\#7a6d60\] { color: #7a6d60 !important; }
+      .text-\[\#2c261f\] { color: #2c261f !important; }
+      .text-\[\#6e6256\] { color: #6e6256 !important; }
+      .text-\[\#4a4036\] { color: #4a4036 !important; }
+      .bg-\[\#f3ede3\] { background-color: #f3ede3 !important; }
+      .bg-\[\#1a1814\] { background-color: #1a1814 !important; }
+      .text-\[\#f6f0e6\] { color: #f6f0e6 !important; }
+      .tracking-\[0\.4em\] { letter-spacing: 0.4em !important; }
+      .tracking-\[0\.28em\] { letter-spacing: 0.28em !important; }
+      .tracking-\[0\.24em\] { letter-spacing: 0.24em !important; }
+      .tracking-\[0\.16em\] { letter-spacing: 0.16em !important; }
+      .tracking-\[0\.18em\] { letter-spacing: 0.18em !important; }
+      .w-1\/2 { width: 50% !important; }
+      .left-1\/2 { left: 50% !important; }
+      .-translate-x-1\/2 { transform: translateX(-50%) !important; }
+      .-translate-y-1\/2 { transform: translateY(-50%) !important; }
+      .z-\[60\] { z-index: 60 !important; }
+      .min-h-\[100dvh\] { min-height: 100vh !important; min-height: 100dvh !important; }
     </style>
   </head>
   <body>
