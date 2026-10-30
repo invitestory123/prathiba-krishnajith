@@ -52,7 +52,7 @@ window.WEDDING_DATA = {
       note: "An evening of music, melody, dance, and celebratory joy.",
     },
     {
-      name: "Ayaniyoou",
+      name: "Ayaniyoonu",
       icon: "heart",
       date: "Saturday, 8th May 2027",
       dayLabel: "Saturday",
@@ -77,7 +77,7 @@ window.WEDDING_DATA = {
 
   program: [
     { name: "Sangeeth Celebrations", time: "07 May, 5:00 PM" },
-    { name: "Ayaniyoou", time: "08 May, 7:00 AM" },
+    { name: "Ayaniyoonu", time: "08 May, 7:00 AM" },
     { name: "Muhurtham", time: "09 May, 7:30 AM – 8:30 AM" },
   ],
 
